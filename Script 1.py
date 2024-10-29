@@ -26,3 +26,4 @@ row_column_counts = raw_df.apply(lambda row: len(row.dropna()), axis=1)
 
 #find rows with different number of columns 
 inconsistent_rows = raw_df[row_column_counts != row_column_counts.mode()[0]]
+
